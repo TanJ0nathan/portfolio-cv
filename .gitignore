@@ -1,0 +1,17 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets (ne jamais versionner)
+.env
+.env.*
+
+# Dépendances (si vous ajoutez npm plus tard)
+node_modules/

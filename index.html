@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Développeur Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="logo" href="#hero">JTan<span class="logo-dot">.</span>dev</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#profil">Profil</a>
+      <a href="#terminal">Console</a>
+      <a href="#competences">Compétences</a>
+      <a href="#defi">Défi</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="btn-theme" id="themeToggle" aria-label="Basculer le thème clair ou sombre">
+        <span class="theme-icon sun" aria-hidden="true">☀</span>
+        <span class="theme-icon moon" aria-hidden="true">☾</span>
+      </button>
+      <a class="btn btn-primary btn-small" href="#contact">Me contacter</a>
+    </div>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <nav aria-label="Navigation mobile">
+      <a href="#profil">Profil</a>
+      <a href="#terminal">Console</a>
+      <a href="#competences">Compétences</a>
+      <a href="#defi">Défi</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-inner">
+        <p class="hero-kicker" data-reveal>Développeur full stack</p>
+        <h1 class="hero-title" data-reveal>
+          <span class="line">Je construis des</span>
+          <span class="line accent">expériences web</span>
+          <span class="line">fluides &amp; robustes</span>
+        </h1>
+        <p class="hero-lead" data-reveal>
+          Bienvenue sur mon CV interactif. Explorez la console, testez vos connaissances
+          et découvrez comment je combine front, API et bases de données.
+        </p>
+        <div class="hero-cta" data-reveal>
+          <a class="btn btn-primary magnetic" href="#terminal">Ouvrir la console</a>
+          <a class="btn btn-ghost magnetic" href="#competences">Voir les compétences</a>
+        </div>
+        <div class="hero-stats" data-reveal>
+          <div class="stat">
+            <span class="stat-value" data-count="0">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Années d’expérience </span>
+            <span class="stat-label">Il faut bien commencer padawan avant de devenir maitre</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="0">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Projets livrés</span>
+            <span class="stat-label">Ce chiffre ne peut qu'augmenter avec le temps et le travail</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="100">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Passion & détermination</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Défiler</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <section class="section profil" id="profil">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">À propos</span>
+          <h2 class="section-title">Profil en un coup d’œil</h2>
+          <p class="section-desc">
+            De formation technicien support informatique, j'ai découvert le développement web en autodidacte et je me suis formé en validant mon diplôme de développeur full stack en 2024. Passionné par le développement web, je suis à la recherche d'une entreprise pour continuer à apprendre et à développer mes compétences.
+          </p>
+        </header>
+        <div class="profil-grid">
+          <article class="card card-tilt" data-tilt>
+            <div class="card-icon">⚡</div>
+            <h3>Performance</h3>
+            <p>Optimisation des bundles, lazy loading, caching et observabilité côté serveur.</p>
+          </article>
+          <article class="card card-tilt" data-tilt>
+            <div class="card-icon">🔗</div>
+            <h3>API &amp; données</h3>
+            <p>REST, GraphQL, schémas SQL/NoSQL, migrations et intégrations tierces.</p>
+          </article>
+          <article class="card card-tilt" data-tilt>
+            <div class="card-icon">🎨</div>
+            <h3>UX soignée</h3>
+            <p>Interfaces accessibles, animations fluides, design systems et responsive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Interaction</span>
+          <h2 class="section-title">Console interactive</h2>
+          <p class="section-desc">
+            Tapez des commandes comme dans un terminal. Essayez <kbd>help</kbd> pour commencer.
+          </p>
+        </header>
+        <div class="terminal" role="region" aria-label="Console interactive">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">portfolio@fullstack ~ zsh</span>
+          </div>
+          <div class="terminal-body" id="terminalOutput" tabindex="0"></div>
+          <div class="terminal-input-line">
+            <span class="prompt">$</span>
+            <input
+              type="text"
+              id="terminalInput"
+              class="terminal-input"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="Commande terminal"
+              placeholder="help"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section competences" id="competences">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Stack</span>
+          <h2 class="section-title">Compétences techniques</h2>
+          <p class="section-desc">
+            Cliquez sur une compétence pour afficher un détail — démo d’état UI côté client.
+          </p>
+        </header>
+        <div class="skills-layout">
+          <div class="skills-list" id="skillsList" role="tablist" aria-label="Liste des compétences"></div>
+          <div class="skill-detail glass" id="skillDetail" aria-live="polite">
+            <p class="skill-detail-placeholder">Sélectionnez une compétence à gauche.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section defi" id="defi">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Mini-défi</span>
+          <h2 class="section-title">Quiz technique express</h2>
+          <p class="section-desc">
+            3 questions — un petit clin d’œil aux entretiens et à la culture web.
+          </p>
+        </header>
+        <div class="quiz" id="quiz">
+          <div class="quiz-progress">
+            <div class="quiz-progress-bar" id="quizProgress"></div>
+          </div>
+          <div class="quiz-card glass" id="quizCard"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section parcours" id="parcours">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Expérience</span>
+          <h2 class="section-title">Parcours</h2>
+          <p class="section-desc"></p>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-date">2024</span>
+            <h3>Obtention du diplôme de développeur web full stack</h3>
+            <p class="timeline-meta">Ecole O'clock</p>
+            <p>Projets réalisés en groupe et en solo. Création d'un site web marchand avec un backoffice et une interface admin. Validation du diplôme de développeur web full stack. </p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3>Formation développeur web full stack</h3>
+            <p class="timeline-meta">Ecole O'clock</p>
+            <p>Html, Css, JavaScript, React, Node.js, Express, MongoDB, SQL, Postgres, MySQL, NoSQL, Git, GitHub, Docker, Kubernetes, DevOps, CI/CD, API REST, GraphQL, WebSocket</p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-date">2015 — 2022</span>
+            <h3>Technicien support informatique</h3>
+            <p class="timeline-meta">Entreprise de services informatiques et services publique</p>
+            <p>Support utilisateurs, maintenance informatique, formation utilisateurs, installation de logiciels, configuration de postes, support utilisateurs, maintenance informatique, formation utilisateurs, installation de logiciels, configuration de postes</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Échangeons</h2>
+          <p class="section-desc">
+            Un message, une réponse — le formulaire vous envoie directement un email.
+          </p>
+        </header>
+        <form class="contact-form glass" id="contactForm" novalidate>
+          <!-- Honeypot anti-spam (invisible, laissé vide par les vrais visiteurs) -->
+          <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Votre nom" />
+            <span class="field-error" data-for="name"></span>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="vous@exemple.com" />
+            <span class="field-error" data-for="email"></span>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Votre message…"></textarea>
+            <span class="field-error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full magnetic" id="formSubmitBtn">Envoyer</button>
+          <p class="form-success" id="formSuccess" hidden>Merci ! Votre message a bien été envoyé.</p>
+          <p class="form-error" id="formError" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Portfolio — Construit en HTML, CSS &amp; JavaScript.</p>
+      <a href="#hero" class="footer-top">↑ Haut de page</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
