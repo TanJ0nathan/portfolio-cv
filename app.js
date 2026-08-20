@@ -12,7 +12,7 @@
     {
       id: "react",
       name: "React / Next.js",
-      level: 92,
+      level: 75,
       tag: "Front & SSR",
       detail:
         "Composants, hooks, Server Components, routing et optimisation Core Web Vitals.",
@@ -78,9 +78,9 @@
     {
       q: "Quel principe REST décrit l’usage cohérent des verbes HTTP (GET, POST, etc.) ?",
       options: [
-        { text: "Interface uniforme.", correct: true },
         { text: "Stateless uniquement.", correct: false },
         { text: "Cache obligatoire.", correct: false },
+        { text: "Interface uniforme.", correct: true },
       ],
       explain: "L’interface uniforme inclut l’utilisation standardisée des méthodes HTTP.",
     },
@@ -97,7 +97,7 @@
         "  help          — cette aide",
         "  skills        — aperçu de la stack",
         "  clear         — effacer l’écran",
-        "  contact       — coordonnées (à personnaliser)",
+        "  contact       — coordonnées ",
         "  joke          — petite pause",
         "  whoami        — profil rapide",
       ].join("\n"),
@@ -106,13 +106,12 @@
     clear: () => "__CLEAR__",
     contact: () =>
       [
-        "Contact (modifiez dans app.js) :",
-        "  Email    : vous@exemple.com",
-        "  LinkedIn : linkedin.com/in/votre-profil",
-        "  GitHub   : github.com/votre-compte",
+        "Contact :",
+        "  Email    : jonathantan.pro@gmail.com",
+        "  GitHub   : github.com/TanJ0nathan",
       ].join("\n"),
     joke: () =>
-      "Pourquoi les développeurs préfèrent le dark mode ? Parce que la lumière attire les bugs.",
+      "Seul les geeks peuvent comprendre pourquoi la peugeot 404 n'existe pas.",
     whoami: () =>
       "Développeur full stack — passionné par le produit, la qualité du code et l’expérience utilisateur.",
   };
@@ -344,7 +343,7 @@
       quizCard.innerHTML = `
         <div class="quiz-score">
           <strong>${score} / ${QUIZ.length}</strong>
-          <p>Merci d'avoir joué — à personnaliser avec vos propres questions.</p>
+          <p>Merci d'avoir joué </p>
           <button type="button" class="btn btn-primary quiz-restart" id="quizRestart">Recommencer</button>
         </div>
       `;
